@@ -69,5 +69,13 @@ $(document).click(function(loc) {
     logClicks(x, y);
 })
 
+function locationizer(work_obj) {
+    let locationArray = [];
+    for (job in work_obj.jobs) {
+        let newLocation = work_obj.jobs[job].Location
+        locationArray.push(newLocation)
+    }
+    return locationArray
+}
 
-
+console.log(locationizer(work));
