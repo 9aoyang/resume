@@ -1,3 +1,5 @@
+import './helper.js'
+
 let bio = {
     'name': 'Yang Gao',
     'role': 'Front-end',
@@ -32,6 +34,14 @@ let work = {
         }
     ]
 };
+
+let project = {
+    'project': [
+        {
+
+        }
+    ]
+}
 
 let formattedName = HTMLheaderName.replace('%data%', bio.name);
 let formattedRole = HTMLheaderRole.replace('%data%', bio.role);
@@ -89,3 +99,5 @@ let inName = function () {
     name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
     return name[0] + ' ' + name[1];
 }
+
+
